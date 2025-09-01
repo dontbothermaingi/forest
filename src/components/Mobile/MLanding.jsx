@@ -11,7 +11,7 @@ function MLanding ({scrollToAbout, scrollToPortofolio, scrollToInsights, scrollT
 
             <div className="flex flex-col items-center pt-20">
                 <Typography color="#FFD700" fontFamily={"AT Bold"} fontSize={{lg:"130px", xs:"60px"}} textAlign={'center'} lineHeight={1.0}>FOREST INVESTMENTS</Typography>
-                <div className="absolute bg-[url('Tree.png')] bg-cover h-80 w-70 border-white top-60"/>
+                <div className="absolute bg-[url('/Tree.png')] bg-cover h-80 w-70 border-white top-60"/>
             </div>
 
             <motion.div

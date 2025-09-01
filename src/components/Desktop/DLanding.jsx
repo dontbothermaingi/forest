@@ -10,7 +10,7 @@ function DLanding ({scrollToAbout, scrollToPortofolio, scrollToInsights, scrollT
 
             <div className="flex flex-col items-center">
                 <Typography color="#FFD700" fontFamily={"AT Bold"} fontSize={{lg:"130px"}} textAlign={'center'}>FOREST INVESTMENTS</Typography>
-                <div className="absolute bg-[url('Tree.png')] bg-cover h-160 w-140 border-white top-60"/>
+                <div className="absolute bg-[url('/Tree.png')] bg-cover h-160 w-140 border-white top-60"/>
             </div>
 
             <div className="absolute border-white h-50 w-120 bottom-0 right-20">
