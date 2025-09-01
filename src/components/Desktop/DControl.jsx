@@ -21,11 +21,17 @@ function DControl (){
     const market = useRef()
     const estate = useRef()
     const feedback = useRef()
+    const landingRef = useRef()
+
 
     const isMobile = useMediaQuery('(max-width:1280px)')
 
     function scrollToAbout(){
         aboutRef.current?.scrollIntoView({behavior:"smooth"})
+    }
+
+    function scrollToLanding(){
+        landingRef.current?.scrollIntoView({behavior:"smooth"})
     }
 
     function scrollToPortofolio() {
@@ -46,7 +52,7 @@ function DControl (){
 
     return ( 
         <div>
-            <section>
+            <section ref={landingRef}>
                 {!isMobile ? (
                     <DLanding scrollToAbout={scrollToAbout} scrollToPortofolio={scrollToPortofolio} scrollToInsights={scrollToInsights} scrollToEstate={scrollToEstate} scrollToFeedback={scrollToFeedback}/>
                 ):(
@@ -76,7 +82,7 @@ function DControl (){
             </section>
 
             <section>
-                <DFooter/>
+                <DFooter scrollToAbout={scrollToAbout} scrollToPortofolio={scrollToPortofolio} scrollToInsights={scrollToInsights} scrollToEstate={scrollToEstate} scrollToFeedback={scrollToFeedback} scrollToLanding={scrollToLanding}/>
             </section>
         </div>
      );

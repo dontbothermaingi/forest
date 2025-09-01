@@ -1,6 +1,8 @@
 import { Typography } from "@mui/material";
+import { useNavigate } from "react-router";
 
-function DFooter (){
+function DFooter ({scrollToAbout, scrollToPortofolio, scrollToLanding, scrollToFeedback}){
+
     return ( 
         <div className="bg-[#102C1C] h-fit py-10 px-20">
 
@@ -10,10 +12,10 @@ function DFooter (){
                 </div>
 
                 <div className="flex items-center gap-5">
-                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}}>Homes</Typography>
-                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}}>About</Typography>
-                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}}>Portofolio</Typography>
-                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}}>Testimonials</Typography>
+                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}} sx={{cursor:"pointer"}} onClick={scrollToLanding}>Home</Typography>
+                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}} sx={{cursor:"pointer"}} onClick={scrollToAbout}>About</Typography>
+                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}} sx={{cursor:"pointer"}} onClick={scrollToPortofolio}>Portofolio</Typography>
+                    <Typography color="gray" fontFamily={"AT Bold"} fontSize={{lg:"20px"}} sx={{cursor:"pointer"}} onClick={scrollToFeedback}>Testimonials</Typography>
                 </div>
 
 

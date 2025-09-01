@@ -25,7 +25,7 @@ function DPortofolio() {
     },
     {
       title: "Fire Systems",
-      image: "/fire.jpg",
+      image: "/Fire1.jpg",
       desc: "Forest assisted a successful Russian fire detection and response company with their first expansion outside their homeland, supporting strategic entry into the UAE.",
     },
   ];
