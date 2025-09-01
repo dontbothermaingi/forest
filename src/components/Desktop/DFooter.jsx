@@ -6,7 +6,7 @@ function DFooter (){
 
             <div className="flex flex-col items-center justify-center">
                 <div>
-                    <Typography color="#FFD700" fontFamily={"AT Bold"} fontSize={{lg:"130px"}}>Forest Investments</Typography>
+                    <Typography color="#FFD700" fontFamily={"AT Bold"} fontSize={{lg:"130px", md:"50px", xs:"27px"}}>Forest Investments</Typography>
                 </div>
 
                 <div className="flex items-center gap-5">
