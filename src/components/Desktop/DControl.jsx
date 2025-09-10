@@ -13,6 +13,8 @@ import MPortofolio from "../Mobile/MPortfolio";
 import MMarket from "../Mobile/MMarket";
 import MrealEstate from "../Mobile/MRealEstate";
 import MFeedBack from "../Mobile/MFeedback";
+import DInbound from "./DInbound";
+import DInvest from "./DInvest";
 
 function DControl (){
 
@@ -65,13 +67,21 @@ function DControl (){
                 {isMobile ? (<MAbout/>):(<DAbout/>)}
             </section>
 
+            <section ref={market}>
+                {isMobile ? (<DInbound/>) : (<DInbound/>)}
+            </section>
+
+            <section ref={market}>
+                {isMobile ? (<DInvest/>) : (<DInvest/>)}
+            </section>
+
             <section ref={portofolio}>
                 {isMobile ? (<MPortofolio/>) : (<DPortofolio/>)}
             </section>
 
-            <section ref={market}>
-                {isMobile ? (<MMarket/>) : (<DMarket/>)}
-            </section>
+            {/* <section ref={market}>
+                {isMobile ? (<MMarket/>) : (<DInvest/>)}
+            </section> */}
 
             <section ref={estate}>
                 {isMobile ? (<MrealEstate/>) : (<DrealEstate/>)}

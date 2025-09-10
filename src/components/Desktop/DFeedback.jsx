@@ -23,7 +23,7 @@ function DFeedBack() {
           color="black"
           textAlign="center"
           fontFamily={"IT Light"}
-          fontSize={{ lg: "20px", sm: "16px" }}
+          fontSize={{ lg: "18px", sm: "16px" }}
           className="leading-relaxed text-gray-700"
         >
           We believe that lasting success is built on strong relationships. Our

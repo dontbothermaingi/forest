@@ -23,20 +23,17 @@ function MrealEstate() {
         <div className="text-center space-y-6">
           <Typography
             fontFamily={"AT Regular"}
-            fontSize={{ lg: "48px", xs: "30px" }}
+            fontSize={{ lg: "48px", xs: "35px" }}
             color="#FFD700"
           >
             Real Estate Expertise
           </Typography>
           <Typography
             fontFamily={"IT Light"}
-            fontSize={{ lg: "18px", xs: "16px" }}
+            fontSize={{ lg: "18px", xs: "13px" }}
             className="leading-relaxed text-gray-200"
           >
-            Through our real estate subsidiary, Amana Homes, Forest provides
-            premium expertise in both residential and commercial property
-            markets across Dubai and the UAE. We combine local knowledge with a
-            client-focused approach to deliver exceptional results.
+            Through Amana Homes, our real estate arm, Forest offers premium expertise in residential and commercial property across Dubai and the UAE, blending local knowledge with a client-focused approach to deliver results.
           </Typography>
         </div>
 

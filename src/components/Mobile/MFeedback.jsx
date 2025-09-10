@@ -23,14 +23,10 @@ function MFeedBack() {
           color="black"
           textAlign="center"
           fontFamily={"IT Light"}
-          fontSize={{ lg: "18px", xs: "16px" }}
+          fontSize={{ lg: "18px", xs: "13px" }}
           className="leading-relaxed text-gray-700"
         >
-          We believe that lasting success is built on strong relationships. Our
-          clients’ feedback speaks to the way we work collaborative,
-          transparent, and always focused on creating meaningful outcomes.
-          Their words remind us that behind every achievement is a partnership
-          rooted in trust and shared vision.
+          We believe success is built on strong relationships. Our clients’ feedback reflects our collaborative, transparent approach and reminds us that every achievement stems from trust and shared vision
         </Typography>
       </div>
 
@@ -38,18 +34,22 @@ function MFeedBack() {
       <div className="max-w-5xl mx-auto flex flex-col gap-10">
         {reviews.map((review, i) => (
           <div
-            key={i}
-            className="bg-gray-50 border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+          key={i}
+          className="bg-gray-50 border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all transform hover:-translate-y-2 animate-fadeIn"
+          style={{ animationDelay: `${i * 0.2}s` }}
+        >
+          <span className="text-5xl text-[#FFD700] font-serif leading-none">
+            “
+          </span>
+          <Typography
+            color="black"
+            fontFamily={"IT Light"}
+            fontSize={{ lg: "16px", xs: "14px" }}
+            className="leading-relaxed text-gray-800 italic relative z-10"
           >
-            <Typography
-              color="black"
-              fontFamily={"IT Light"}
-              fontSize={{ lg: "16px", xs: "14px" }}
-              className="leading-relaxed text-gray-800 italic"
-            >
-              {review}
-            </Typography>
-          </div>
+            {review}
+          </Typography>
+        </div>
         ))}
       </div>
     </div>

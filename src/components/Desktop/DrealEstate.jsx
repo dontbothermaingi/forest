@@ -2,17 +2,19 @@ import { Typography } from "@mui/material";
 
 function DrealEstate (){
     return ( 
-        <div className="flex px-40 py-10 gap-20 bg-[#2C3A2E]">
+        <div className="flex flex-col items-center justify-center px-40 py-10 gap-20 bg-[#2C3A2E]">
 
-            <div className="w-1/2 flex flex-col gap-10">
+            <div className="flex flex-col items-center w-1/2">
+                    <Typography color="#FFD700" fontFamily={"AT Regular"} fontSize={{lg:"50px"}}>Real Estate Expertise</Typography>
 
-                <div>
-                    <Typography fontFamily={"AT Regular"} fontSize={{lg:"50px"}}>Real Estate Expertise</Typography>
-
-                    <Typography fontFamily={"IT Light"}>
+                    <Typography fontFamily={"IT Light"} sx={{textAlign:"center"}}>
                         Through our real estate subsidiary, Amana Homes, Forest provides premium expertise in both residential and commercial property markets across Dubai and the UAE. We combine local knowledge with a client-focused approach to deliver exceptional results.
                     </Typography>
-                </div>
+            </div>
+
+            <div className="flex gap-10">
+
+            <div className="w-1/2 flex flex-col gap-10">
 
                 <div className="flex flex-col gap-10">
                     <div>
@@ -37,16 +39,26 @@ function DrealEstate (){
                 </div>
 
                 <div>
-                    <button
-                        className="bg-[#FFD700] px-5 py-2 rounded-md text-[#355E3B]"
-                    >
-                        Visit Amana Homes
-                    </button>
+                    <a href="https://www.amanahomes.ae/">
+                        <button
+                            className="bg-[#FFD700] px-5 py-2 rounded-md text-[#355E3B] cursor-pointer"
+                        >
+                            Visit Amana Homes
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <div className="w-1/2">
-                <div className="bg-[url('/Real1.jpg')] bg-cover bg-center h-170 w-full rounded-2xl"/>
+                {/* <div className="bg-[url('/Real1.jpg')] bg-cover bg-center h-170 w-full rounded-2xl"/> */}
+                <img
+                    src="/Real1.jpg"
+                    alt="image"
+                    loading="lazy"
+                    className="object-cover rounded-2xl h-140"
+                />
+            </div>
+
             </div>
         </div>
      );

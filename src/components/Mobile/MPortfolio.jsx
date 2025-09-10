@@ -50,15 +50,10 @@ function MPortofolio() {
         <Typography
           color="white"
           fontFamily={"IT Light"}
-          fontSize={{ lg: "18px", xs: "16px" }}
+          fontSize={{ lg: "18px", xs: "14px" }}
           className="leading-relaxed text-gray-200"
         >
-          Our portfolio showcases a carefully curated selection of projects and
-          investments that reflect Forest’s strategic vision, local market
-          expertise, and commitment to long-term growth. Each initiative
-          demonstrates how we partner with businesses and entrepreneurs to
-          navigate challenges, capitalize on opportunities, and achieve
-          sustainable results.
+          Our portfolio reflects Forest’s vision, expertise, and commitment to growth—helping businesses turn challenges into opportunities.
         </Typography>
       </div>
 

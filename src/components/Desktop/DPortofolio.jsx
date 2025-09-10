@@ -31,9 +31,9 @@ function DPortofolio() {
   ];
 
   return (
-    <div className="bg-[#2C3A2E] flex w-full py-16 px-6 lg:px-12">
+    <div className="bg-[#2C3A2E] flex flex-col gap-10 items-center justify-center w-full py-16 px-6 lg:px-12">
       {/* Left Side - Intro */}
-      <div className="w-1/2 sticky top-20 h-fit px-6 lg:px-10 flex flex-col gap-6 self-start">
+      <div className="w-1/2 sticky top-10 h-fit px-6 lg:px-10 flex flex-col items-center gap-6">
         <Typography color="#FFD700" fontFamily={"AT Regular"} fontSize={{ lg: "20px" }}>
           Portfolio
         </Typography>
@@ -44,7 +44,7 @@ function DPortofolio() {
           color="white"
           fontFamily={"IT Light"}
           fontSize={{ lg: "18px" }}
-          className="leading-relaxed text-gray-200"
+          className="leading-relaxed text-gray-200 text-center"
         >
           Our portfolio showcases a carefully curated selection of projects and investments that reflect Forest’s
           strategic vision, local market expertise, and commitment to long-term growth. Each initiative demonstrates how
@@ -53,7 +53,7 @@ function DPortofolio() {
       </div>
 
       {/* Right Side - Projects */}
-      <div className="w-full lg:w-1/2 flex flex-col items-center gap-32 h-[450vh]">
+      <div className="w-full flex flex-col items-center gap-32 h-[350vh]">
         {projects.map((proj, i) => (
           <motion.div
             key={i}
@@ -61,15 +61,12 @@ function DPortofolio() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className={`bg-[#2C3A2E] sticky top-${15 + i * 10} h-[55vh] w-full sm:w-4/5 rounded-2xl shadow-lg border border-white text-white p-6 sm:p-10 flex flex-col gap-5`}
+            className={`bg-[#2C3A2E] sticky top-80 h-[40vh] w-full sm:w-4/5 rounded-2xl shadow-lg border border-white text-white p-6 sm:p-10 flex gap-5`}
           >
+            <div>
             <Typography color="#FFD700" fontFamily={"IT Medium"} fontSize={{ lg: "30px" }}>
               {proj.title}
             </Typography>
-            <div
-              className="w-full h-72 bg-cover bg-center rounded-2xl transform transition-transform duration-500 hover:scale-[1.03]"
-              style={{ backgroundImage: `url(${proj.image})` }}
-            />
             <Typography
               fontFamily={"IT Light"}
               fontSize={{ lg: "16px" }}
@@ -78,6 +75,19 @@ function DPortofolio() {
             >
               {proj.desc}
             </Typography>
+            {/* <div
+              className="w-full h-72 bg-cover bg-center rounded-2xl transform transition-transform duration-500 hover:scale-[1.03]"
+              style={{ backgroundImage: `url(${proj.image})` }}
+            /> */}
+            </div>
+
+            <img
+              src={`${proj.image}`}
+              alt="image"
+              loading="lazy"
+              className="object-cover w-full h-72 rounded-2xl transform transition-transform duration-500 hover:scale-[1.03]"
+            />
+            
           </motion.div>
         ))}
       </div>
