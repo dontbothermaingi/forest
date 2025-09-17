@@ -67,16 +67,16 @@ function DControl (){
                 {isMobile ? (<MAbout/>):(<DAbout/>)}
             </section>
 
+            <section ref={portofolio}>
+                {isMobile ? (<MPortofolio/>) : (<DPortofolio/>)}
+            </section>
+
             <section ref={market}>
                 {isMobile ? (<DInbound/>) : (<DInbound/>)}
             </section>
 
             <section ref={market}>
                 {isMobile ? (<DInvest/>) : (<DInvest/>)}
-            </section>
-
-            <section ref={portofolio}>
-                {isMobile ? (<MPortofolio/>) : (<DPortofolio/>)}
             </section>
 
             {/* <section ref={market}>

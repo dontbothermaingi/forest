@@ -27,7 +27,7 @@ function DInvest() {
       <div className="">
         <Typography
           fontFamily={"IT Medium"}
-          fontSize={{ lg: "20px", xs: "22px" }}
+          fontSize={{ lg: "44px", xs: "28px" }}
           className="mb-4"
         >
           Hands-On Engagement

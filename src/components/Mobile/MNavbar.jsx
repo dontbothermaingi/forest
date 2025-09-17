@@ -10,7 +10,7 @@ function MNavbar (){
     return ( 
         <div className="">
                 <nav
-                    className={`flex justify-between items-center px-4 py-3 sticky top-0 z-50 bg-[#355E3B] transition-all duration-500 ease-out border-b border-[gray]`}
+                    className={`flex justify-between items-center px-4 py-3 sticky top-0 z-50  transition-all duration-500 ease-out border-b border-[gray]`}
                 >
                         <Typography
                         className="text-2xl font-bold text-[white] cursor-pointer"
