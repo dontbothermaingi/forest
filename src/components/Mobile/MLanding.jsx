@@ -9,7 +9,7 @@ function MLanding ({scrollToAbout, scrollToPortofolio, scrollToInsights, scrollT
 
     const navigate = useNavigate()
     return ( 
-        <div className="bg-[url('/l1.jpg')] bg-cover bg-center h-165 w-full relative">
+        <div className="bg-[url('/l1.jpg')] bg-cover bg-center h-170 w-full relative">
 
             <div className="absolute h-full w-full bg-gradient-to-b from-black/90 to-white/10"/>
 
